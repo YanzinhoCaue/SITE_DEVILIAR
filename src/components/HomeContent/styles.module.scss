@@ -54,11 +54,16 @@
       .agencia {
         margin-right: 29rem;
         margin-bottom: 2rem;
+
+        animation: headlineAgencia 2.5s ease-in-out;
+
       }
 
       .digital {
         margin-bottom: 7rem;
         margin-left: 29rem;
+
+        animation: headlineDigital 2.5s ease-in-out;
       }
     }
     
@@ -89,6 +94,8 @@
         margin: 2rem;
 
         font-size: 3rem;
+
+        animation: lembrado 1s ease-in-out infinite;
       }
     }
   }
@@ -121,5 +128,35 @@
     .headline {
       display: none;
     }
+  }
+}
+
+@keyframes headlineAgencia {
+  0% {
+    margin-left: -50rem;
+  }
+  100% {
+    margin-right: 29rem;
+  }
+}
+
+@keyframes headlineDigital {
+  0% {
+    margin-left: -50rem;
+  }
+  100% {
+    margin-left: 29rem;
+  }
+}
+
+@keyframes lembrado {
+  0% {
+    color: var(--withe);
+  }
+  50% {
+    color: var(--purple);
+  }
+  100% {
+    color: var(--withe);
   }
 }
