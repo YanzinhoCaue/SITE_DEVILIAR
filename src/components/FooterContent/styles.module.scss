@@ -1,0 +1,115 @@
+.container {
+  background-image: url(../../../public/assets/images/Gradiente_Footer.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+
+  color: var(--withe);
+
+  padding: 2rem;
+
+  .headline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    max-width: 90%;
+
+    margin-top: 4rem;
+
+    h1 {
+      width: 90%;
+
+      font-size: 1.5rem;
+
+      font-weight: 700;
+  
+      text-align: center;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+
+      margin: 2rem;
+
+      background-color: var(--purple);
+
+      padding: 2rem 1.5rem;
+
+      font-size: 150%;
+      font-weight: 500;
+
+      border-radius: 4rem;
+
+      span {
+        margin-right: 1rem;
+      }
+
+      transition: .3s ease-in-out;
+
+      &:hover {
+        background-color: var(--withe);
+
+        color: var(--purple);
+      }
+    }
+  }
+
+  .redes {
+    max-width: 1120px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    p {
+      width: 90%;
+
+      font-size: 1.25rem;
+
+      text-align: center;
+
+
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      margin: 10%;
+
+      list-style: none;
+
+      width: 60%;
+
+      li {
+        margin: 5%;
+
+        a {
+          font-size: 400%;
+
+          transition: .3s ease-in-out;
+
+          &:hover {
+            color: var(--purple);
+          }
+        }
+      }
+    }
+  }
+
+  p {
+    margin-top: 2rem;
+  }
+}

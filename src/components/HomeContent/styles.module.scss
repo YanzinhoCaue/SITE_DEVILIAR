@@ -1,0 +1,125 @@
+.container {
+  background-image: url(../../../public/assets/images/Gradiente_Home.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 100vw;
+  height: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--withe);
+
+  main {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    max-width: 1220px;
+    height: 100%;
+
+    ul {
+      position: absolute;
+
+      margin-left: 43rem;
+      margin-bottom: 18rem;
+
+      list-style: none;
+
+      li {
+        margin-bottom: 1rem;
+
+        font-weight: 600;
+        font-size: 1rem;
+      }
+
+      li:first-child {
+        font-size: 1.25rem;
+      }
+    }
+
+    .headline {
+      position: absolute;
+
+      p {
+        font-size: 5.75rem;
+        font-weight: 600;
+      }
+
+      .agencia {
+        margin-right: 29rem;
+        margin-bottom: 2rem;
+      }
+
+      .digital {
+        margin-bottom: 7rem;
+        margin-left: 29rem;
+      }
+    }
+    
+    img {
+      z-index: 2;
+
+      height: 25.25rem;
+      width: auto;
+
+      margin-top: 7rem;
+    }
+    
+    .subheadline {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      width: 75%;
+
+      text-align: center;
+
+      h2 {
+        margin-top: 2rem;
+      }
+
+      h1 {
+        margin: 2rem;
+
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1020px) {
+  .container {
+    main {
+      ul {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 1007px) {
+  .container {
+    main {
+      .headline {
+        .digital {
+          margin-bottom: 9rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 874px) {
+  .container {
+    .headline {
+      display: none;
+    }
+  }
+}

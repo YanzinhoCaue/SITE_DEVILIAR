@@ -1,0 +1,139 @@
+.container{
+  background-image: url(../../../public/assets/images/Gradiente_Serviços.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  max-width: 1220px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .headline{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    width: 80%;
+
+    margin: 1rem;
+
+    color: var(--withe);
+
+    h2 {
+      margin-top: 1rem;
+      width: 95%;
+      font-weight: 600;
+    }
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    width: 80%;
+
+    margin-bottom: 1rem;
+
+    list-style: none;
+
+    li {
+      width: 15.25rem;
+      height: 24.75rem;
+
+      margin: 1rem;
+      
+      background-color: #3F1CA020;
+
+      border-radius: 1rem;
+
+      transition: .3s ease-out;
+
+      padding: 1rem;
+
+      color: var(--withe);
+
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: var(--purple);
+        height: 2rem;
+        width: 2rem;
+
+        padding: 1.5rem;
+
+        border-radius: 0.5rem;
+
+        span {
+          font-size: 1.5rem;
+
+          margin-top: 0.5rem;
+        }
+      }
+
+      h3 {
+        margin-top: 0.5rem;
+      }
+
+      img {
+        margin-top: 0.5rem;
+
+        width: 13.25rem;
+        height: auto;
+
+        border-radius: 0.5rem;
+
+        filter: brightness(50%);
+      }
+
+      p {
+        font-size: 0.60rem;
+
+        margin: 0.5rem 0;
+      }
+
+      span {
+        font-size: 0.55rem;
+      }
+
+      a {
+        display: flex;
+        justify-content: right;
+
+        width: 13.25rem;
+
+        margin-top: 1rem;
+        
+        span {
+          font-size: 0.75rem;
+          font-weight: 600;
+
+          transition: color 0.5s ease;
+
+          &:hover {
+            color: var(--purple);
+          }
+        }
+      }
+
+      section {
+        width: 13.25rem;
+      }
+
+      &:hover {
+        border: 1px solid #3F1CA0;
+
+        transform: scale(110%);
+      }
+    }
+  }
+}
